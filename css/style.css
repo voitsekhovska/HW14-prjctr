@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    300deg,
+    rgb(250, 187, 255) 0%,
+    rgb(201, 183, 250) 100%
+  );
+}
+.container {
+  width: 600px;
+  height: auto;
+  min-height: 400px;
+  padding: 20px;
+  /* border: 1px solid #ffeeffa1; */
+  border-radius: 20px;
+  box-shadow: 1px -3px 40px 15px rgba(0, 0, 0, 0.1);
+}
+
+.collection {
+  list-style: none;
+  border-radius: 5px;
+  margin: 5px 40px;
+  padding: 10px 12px;
+  position: relative;
+  vertical-align: middle;
+}
+.collection li {
+  padding: 5px 20px;
+  margin: 2px;
+  width: 100%;
+  border: 1px solid #fafafaa1;
+  border-radius: 2px;
+  color: #3d3535;
+  font-size: 18px;
+}
+.fa {
+  vertical-align: middle;
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+.styled-checkbox {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  transform: translateY(5px);
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+}
+.styled-checkbox:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.styled-checkbox::before {
+  content: "\2713";
+  font-size: 14px;
+  color: #3d3535;
+  position: absolute;
+  color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.styled-checkbox:checked::before {
+  color: #000;
+}
+.task-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.block-wraper {
+  padding: 15px 0;
+}
+.form-wraper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.todo-input {
+  width: 100%;
+  outline: none;
+  padding: 10px 10px 10px 20px;
+  background-color: transparent;
+  border: 2px solid #fafafaa1;
+  border-radius: 5px;
+  color: #595555;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.todo-input::placeholder {
+  color: #6f6c6c;
+}
+.btn {
+  border: none;
+  outline: #ffeeffa1;
+  background: #234f5471;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30%;
+  height: 40px;
+}
